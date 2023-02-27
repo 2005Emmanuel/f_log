@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+
+@media only screen and ( min-width: 800px ) {
+      /* for bigger screen */
+    
+    .main{
+        width: 100%;
+        height: 100%;
+        left: 0%;
+        top: 0%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(240,242,245);
+    }
+    .parent_div{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .child_box{
+        width: 45%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .hrr{
+        width: 25%;
+        height: 0%;
+    }
+    .hrbx{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+    }
+    .tt{
+        padding: 2%;
+    }
+    .hd_txt{
+        color: #007bff;
+        font-size: 5vw;
+        font-weight: bold;
+    }
+    .hd_txt_inner{
+        color: black;
+        font-size: 2vw;
+        font-weight: 300;
+    }
+    .txt{
+        color: #0f6ae0;
+    }
+    .fa-facebook{
+        font-size: 4vw;
+        color: #1877f2;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .form_bx{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(255,255,255);
+    }
+    .email_pass:focus::-webkit-input-placeholder{
+        position: relative;
+        top: -17px;
+    }
+    .email_pass{
+        width: 80%;
+        height: 4vw;
+        padding-left: 20px;
+        /* border-radius: 5px; */
+        /* border-width: 1px; */
+        outline: none;
+       
+    }
+    .pic{
+        margin-bottom: 7%;
+    }
+    .login{
+        width: 80%;
+        height: 3vw;
+        font-size: 1.2vw;
+        background-color: rgb(24,119,242);
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+     .creatacc{
+        width: 80%;
+        height: 3vw;
+        font-size: 1.2vw;
+        font-weight: bold;
+        color: rgb(7,61,135);
+        border-width: 1px;
+        background-color: rgb(136,203,255);
+        border-radius: 5px;
+        border: none;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+}
+
+
+@media only screen and ( max-width: 800px ) {
+    /* for smaller screen */
+
+
+    .main{
+        width: 100%;
+        height: auto;
+        left: 0%;
+        top: 0%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255,255,255);
+    }
+    .hd_txt{
+        display: none;
+    }
+    .hd_txt_inner{
+        display: none;
+    }
+    .parent_div{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .child_box{
+        width: 100%;
+        height: auto;
+        margin-top: 0%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .fa-facebook{
+        font-size: 20vw;
+        color: #1877f2;
+        margin-bottom: 15%;
+    }
+    .form_bx{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border-radius: 20px; */
+        background-color: rgb(255,255,255);
+
+    }
+   
+    .email_pass{
+        width: 90%;
+        height: 15vw;
+        /* border-radius: 8px; */
+        border-width: 1px;
+        font-size: 5vw;
+        background-color: rgb(255,255,255);
+        padding-left: 20px;
+    }
+    .email_pass:focus::-webkit-input-placeholder{
+        position: relative;
+        top: -17px;
+    }
+    .login{
+        width: 90%;
+        height: 12vw;
+        font-size: 5vw;
+        background-color: rgb(24,119,242);
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+        .hrr{
+        width: 25%;
+        height: 0%;
+    }
+    .hrbx{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+    }
+    .tt{
+        padding: 3%;
+    }
+     .creatacc{
+        width: 90%;
+        height: 10vw;
+        font-size: 4vw;
+        font-weight: bold;
+        border: none;
+        background-color: rgb(151, 204, 245);
+        border-radius: 5px;
+        color: rgb(7,61,135);
+        margin-top: 10vh;
+        margin-bottom: 1%;
+    }
+    .pic{
+        margin-bottom: 7%;
+    }
+   
+}
