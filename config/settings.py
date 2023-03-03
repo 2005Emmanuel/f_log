@@ -25,13 +25,13 @@ secret_key = SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #Production
-# DEBUG = False
-
-# ALLOWED_HOSTS = ['*']
-#Development
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+#Development
+# DEBUG = True
+
+# ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -80,25 +80,25 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 # DATABASES = {
 #     'default': {
-#        'ENGINE': 'django.db.backends.mysql',
-#        'NAME': 'fb_logind-db',
-#        'USER': 'root',
-#        'PASSWORD': "",
-#        'HOST': "",
-#        'PORT': "",
-# 'OPTIONS': {
-# 'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-# }
+DATABASES = {
+    'default': {
+       'ENGINE': 'django.db.backends.mysql',
+       'NAME': 'railway',
+       'USER': 'root',
+       'PASSWORD': "YBMmmkC5QLyitjRtR9CB",
+       'HOST': "containers-us-west-126.railway.app",
+       'PORT': "5473",
+'OPTIONS': {
+'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+    }
+}
+}
 
 
 # Password validation
@@ -146,3 +146,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 PYTHON_VERSION = 3.7
+# CSRF_TRUSTED_ORIGINS = [
+#     "https://ilog-production.up.railway.app/", 
+#     "https://ilog-production.up.railway.app/",
+#     ]
